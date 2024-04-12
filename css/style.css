@@ -1,0 +1,66 @@
+/* Walt Disney Company Main CSS */
+
+
+
+
+/* Global Styles */
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+
+
+h4 {
+	font-size: 75%;
+	font-weight: normal;
+	font-family: arial, sans-serif;
+	text-transform: uppercase;
+	color: #7c7874;
+	letter-spacing: .1rem;
+	margin: 0;
+}
+
+.featured-p {
+	font-size: 100%;
+	font-family: "Helvetica Neue light", Helvetica, Arial, sans-serif;
+	font-weight: normal;
+	color: #474543;
+}
+
+
+/* molecule style ---
+
+featured section */
+
+.demo-img {
+	max-width: 45%;
+	margin: 1rem;
+}
+
+
+.latest-news {
+	max-width: 50%;
+}
+
+.featured {
+	background-color: #fcf8ee;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	margin: 1rem;
+}
+
+.featured-img {
+	width: 100%;
+	margin: 0;
+	padding: 1rem;
+	border-radius: 10%;
+}
+
+
+
+
+
