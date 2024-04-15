@@ -1,39 +1,188 @@
-/* Walt Disney Company Main CSS */
+/* Walt Disney Company design study CSS */
 
 
+/* component page styling */
+
+.component-img {
+	max-width: 100%;
+}
+
+.component_margins {
+	margin: 2rem;
+}
+
+.component_code {
+	padding: 1rem;
+}
+
+.component_code_background {
+	background: var(--gray-light);
+	padding: 1rem;
+}
+
+.component {
+	margin-top: 1rem;
+	padding: 1rem;
+	border: 1px solid var(--gray-light);
+}
+
+/* fonts */
+
+@import url(https://db.onlinewebfonts.com/c/130a63bec7d0efc605bbe6253a27de98?family=InspireTWDC);
+@font-face {
+    font-family: 'Matterhorn Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Matterhorn Regular'), url('Matterhorn.woff') format('woff');
+    }
+
+/* Global styles */
+
+:root {
+  --black: #000;
+  --gray-dark: #555555;
+  --gray-medium: #7c7874;
+  --gray-light: #e0dfdf;
+  --tan: #ded4bd;
+  --aqua-green: #4cd8b0; 
+  --white: #fff;
+  --off-white: #fff7e4; /* or #fcf8ee?)*/
+  --pale-green: #dcf9f1;
+  --blue: #0077da;
+  --blue-dark: #2d68b1;
+  --gradient: linear-gradient(to right, red 5%, orange 25%, yellow 25%, green 25%, blue 5%);
+	--font-script: "Monorail Regular", Script;
+  --font-sans-serif-avenir: "Avenir Next Regular", "InspireTWDC", "Matterhorn Regular", Helvetica, sans-serif;
+  --font-sans-serif-inspire: "InspireTWDC", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
 
 
-/* Global Styles */
-
+html {
+  box-sizing: border-box;
+}
 *,
 *:before,
 *:after {
-  box-sizing: border-box;
+  box-sizing: inherit;
 }
 
+body, 
+p {
+  font-family: var(--font-sans-serif-inspire);
+  font-weight: 400;
+  color: var(--gray-dark);
+  line-height: 1.666;
+}
 
+h1, h2, h3, h4, h5, h6 {
+	font-family: var(--font-sans-serif-inspire);
+	margin: 0;
+	padding: 0;
+} 
 
-h4 {
-	font-size: 75%;
-	font-weight: normal;
-	font-family: arial, sans-serif;
+h1 {
+	color: var(--black);
 	text-transform: uppercase;
-	color: #7c7874;
-	letter-spacing: .1rem;
+	font-size: 4rem;
+	letter-spacing: .2rem;
 	margin: 0;
 }
 
-.featured-p {
-	font-size: 100%;
-	font-family: "Helvetica Neue light", Helvetica, Arial, sans-serif;
+h2 {
+	color: var(--gray-dark);
+	font-size: 2rem;
 	font-weight: normal;
-	color: #474543;
+	line-height: 2.5rem;
+}
+
+h3 {
+	color: var(--black);
+	font-weight: normal;
+	text-transform: uppercase;
+	font-size: 2rem;
+}
+
+h4 {
+	color: var(--black); /* actually the color is white with a black hover) */
+	text-transform: uppercase;
+	font-weight: normal;
+	font-size: 1rem;
+}
+
+h6 {
+	color: var(--gray-dark);
+	text-transform: uppercase;
+	font-weight: light;
+	font-size: .75rem;
+}
+
+a {
+	color: inherit;
+	text-transform: inherit;
+	text-decoration: none;
+}
+
+ul, li, a {
+	text-decoration: none;
+	list-style-type: none;
+}
+
+.logo {
+	max-width: 100px;
+	margin: auto;
+	position: center;
 }
 
 
-/* molecule style ---
+/* header */
 
-featured section */
+
+.header {
+	max-width: 100%;
+	padding: .5rem;
+	background: var(--white);
+	border-top: 2px solid var(--black); /* not sure how to do a gradient line */
+	border-bottom: 1px solid var(--gray-light);
+}
+
+
+/* navigation */
+
+.navbar-main {
+	display: flex;
+	border: none;
+	padding: 0;
+	justify-content: space-between;
+}
+
+.navbar-main ul {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	margin: 0;
+}
+
+.navbar-main li {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	padding: 0 1rem;
+}
+
+.header-logo {
+	margin: 0;
+	padding: 0;
+}
+
+
+
+
+
+
+
+/* 
+
+featured section 
 
 .demo-img {
 	max-width: 45%;
@@ -62,5 +211,5 @@ featured section */
 
 
 
-
+*/
 
