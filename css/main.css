@@ -26,7 +26,8 @@
 	border: 1px solid var(--gray-light);
 }
 
-/* fonts */
+
+/* Global styles */
 
 @import url(https://db.onlinewebfonts.com/c/130a63bec7d0efc605bbe6253a27de98?family=InspireTWDC);
 @font-face {
@@ -35,8 +36,6 @@
     font-weight: normal;
     src: local('Matterhorn Regular'), url('Matterhorn.woff') format('woff');
     }
-
-/* Global styles */
 
 :root {
   --black: #000;
@@ -50,12 +49,11 @@
   --pale-green: #dcf9f1;
   --blue: #0077da;
   --blue-dark: #2d68b1;
-  --gradient: linear-gradient(to right, red 5%, orange 25%, yellow 25%, green 25%, blue 5%);
+  --clear: rgba(0, 0, 0, 0.5);
 	--font-script: "Monorail Regular", Script;
   --font-sans-serif-avenir: "Avenir Next Regular", "InspireTWDC", "Matterhorn Regular", Helvetica, sans-serif;
   --font-sans-serif-inspire: "InspireTWDC", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-
 
 html {
   box-sizing: border-box;
@@ -127,89 +125,100 @@ ul, li, a {
 	list-style-type: none;
 }
 
-.logo {
-	max-width: 100px;
-	margin: auto;
-	position: center;
-}
 
 
-/* header */
-
+/* header navigation */
 
 .header {
-	max-width: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: space-evenly;
 	padding: .5rem;
-	background: var(--white);
-	border-top: 2px solid var(--black); /* not sure how to do a gradient line */
+	background-color: var(--clear);
+	color: var(--white);
+}
+
+.header:hover {
+	background-color: var(--white);
+	color: var(--black);
+	border-image: linear-gradient(orange, yellow, green, blue) 10;  /*THIS IS STILL NOT QUITE RIGHT*/
+	border-width: 3px;
+	border-style: solid;
 	border-bottom: 1px solid var(--gray-light);
 }
 
-
-/* navigation */
-
-.navbar-main {
+.navbar {
 	display: flex;
 	border: none;
 	padding: 0;
 	justify-content: space-between;
 }
 
-.navbar-main ul {
+.navbar ul {
 	display: flex;
 	justify-content: space-evenly;
 	align-items: center;
 	margin: 0;
 }
 
-.navbar-main li {
+.navbar li {
 	display: flex;
 	justify-content: space-evenly;
 	align-items: center;
 	padding: 0 1rem;
+	text-transform: uppercase;
 }
 
-.header-logo {
-	margin: 0;
-	padding: 0;
-}
-
-
-
-
-
-
-
-/* 
-
-featured section 
-
-.demo-img {
-	max-width: 45%;
-	margin: 1rem;
-}
-
-
-.latest-news {
-	max-width: 50%;
-}
-
-.featured {
-	background-color: #fcf8ee;
+.mag-glass {
 	display: flex;
-	flex-direction: column;
+	justify-content: right;
+	align-items: center;
+	max-width: 20px;
+}
+
+.mag-glass:hover {     /* THIS STILL DOESN'T WORK RIGHT*/
+	background-image: url('../img/magnifying-glass-black.png');  
+	max-width: 20px;
+}
+
+.logo {
+	display: flex;
+	justify-content: center;
+	max-width: 100px;
+	align-items: center;
+}
+
+.logo:hover {     /* THIS STILL DOESN'T WORK RIGHT*/
+	background-image: url('../img/disney-logo-black.png');
+	max-width: 100px;
+}
+
+
+
+/* footer Navigation */
+
+
+.footer-social {
+	padding-top: 2rem;
+	text-transform: uppercase;
 	text-align: center;
-	margin: 1rem;
-}
-
-.featured-img {
-	width: 100%;
+	background-color: var(--off-white);
 	margin: 0;
-	padding: 1rem;
-	border-radius: 10%;
+	font-size: 30%;
 }
 
+.navfooter ul {
+	display: flex;
+	justify-content: space-evenly;
+	color: var(--aqua-green);
+	background-color: var(--off-white);
+	font-size: 30%;
+	align-items: center;
+	padding: 1rem;
+	margin: 0;
+}
 
-
-*/
+.navfooter li {
+	border-right: 1px solid var(--gray-light);
+}
 
