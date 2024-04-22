@@ -97,7 +97,7 @@ h3 {
 	color: var(--black);
 	font-weight: normal;
 	text-transform: uppercase;
-	font-size: 2rem;
+	font-size: 1.5rem;
 }
 
 h4 {
@@ -125,6 +125,18 @@ ul, li, a {
 	list-style-type: none;
 }
 
+button {
+	background: var(--pale-green);
+	text-transform: uppercase;
+	padding: .5rem;
+	border: none;
+	font-size: 80%;
+}
+
+button:hover {
+	background: var(--aqua-green);
+	color: var(--white);
+}
 
 
 /* header navigation */
@@ -145,11 +157,17 @@ ul, li, a {
 }
 
 .navbar {
-	width: 100%;
+	width: auto;
 	display: flex;
 	border: none;
 	padding: 0;
-	justify-content: space-between;
+	margin: 0;
+	justify-content: space-evenly;
+}
+
+.navbar:hover {
+	background: var(--white);
+	width: 100%;
 }
 
 .navbar ul {
@@ -157,14 +175,14 @@ ul, li, a {
 	justify-content: space-evenly;
 	align-items: center;
 	margin: 0;
-	background-color: var(--white);
+	
 }
 
 .navbar li {
 	display: flex;
 	justify-content: space-evenly;
 	align-items: center;
-	padding: 0 1rem;
+	padding: .5rem 1rem;
 	text-transform: uppercase;
 }
 
@@ -175,10 +193,9 @@ ul, li, a {
 	max-width: 20px;
 }
 
-.mag-glass:hover {     /* THIS STILL DOESN'T WORK RIGHT*/
+.mag-glass:hover {  
 	/*background-image: url('../img/magnifying-glass-black.png');  */
 	max-width: 20px;
-	background: var(--white);
 }
 
 .logo {
@@ -191,6 +208,47 @@ ul, li, a {
 .logo:hover {     /* THIS STILL DOESN'T WORK RIGHT*/
 	background-image: url('../img/disney-logo-black.png');
 	max-width: 100px;
+}
+
+
+/* Spotlight Section */
+
+
+.spotlight {
+	background: var(--off-white);
+}
+
+.spotlight-img {
+	align-items: center;
+	padding: 2rem 4rem;
+	max-width: 100%;
+	border-radius: 15px;
+}
+
+.callout-box-right {
+	max-width: 40%;
+	background: linear-gradient(to bottom, orange, yellow, green, aquamarine);
+	padding-right: 3px;
+	margin: 0;
+	align-items: center;
+}
+
+.callout-box-left {
+	max-width: 40%;
+	background: linear-gradient(to bottom, orange, yellow, green, aquamarine);
+	margin: 0;
+	padding-left: 3px;
+	align-items: center;
+}
+
+
+.callout {
+	background: var(--white);
+	display: flex;
+	flex-direction: column;
+	padding: 2rem;
+	margin: 0;
+
 }
 
 
