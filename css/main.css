@@ -133,21 +133,19 @@ ul, li, a {
 	width: 100%;
 	display: flex;
 	justify-content: space-evenly;
-	padding: .5rem;
+	padding-top: 4px;
 	background-color: var(--clear);
 	color: var(--white);
 }
 
 .header:hover {
-	background-color: var(--white);
+	background: linear-gradient(to right, orange, yellow, green, aquamarine);
 	color: var(--black);
-	border-image: linear-gradient(orange, yellow, green, blue) 10;  /*THIS IS STILL NOT QUITE RIGHT*/
-	border-width: 3px;
-	border-style: solid;
 	border-bottom: 1px solid var(--gray-light);
 }
 
 .navbar {
+	width: 100%;
 	display: flex;
 	border: none;
 	padding: 0;
@@ -159,6 +157,7 @@ ul, li, a {
 	justify-content: space-evenly;
 	align-items: center;
 	margin: 0;
+	background-color: var(--white);
 }
 
 .navbar li {
@@ -177,8 +176,9 @@ ul, li, a {
 }
 
 .mag-glass:hover {     /* THIS STILL DOESN'T WORK RIGHT*/
-	background-image: url('../img/magnifying-glass-black.png');  
+	/*background-image: url('../img/magnifying-glass-black.png');  */
 	max-width: 20px;
+	background: var(--white);
 }
 
 .logo {
@@ -197,28 +197,62 @@ ul, li, a {
 
 /* footer Navigation */
 
+.footer {
+	background: linear-gradient(to right, orange, yellow, green, aquamarine);
+	text-align: center;
+	padding-bottom: 4px;
+	margin: 0;
+}
+
+.social {
+	background: var(--off-white);
+}
 
 .footer-social {
-	padding-top: 2rem;
+	padding: 3rem 0 .5rem 0;
 	text-transform: uppercase;
-	text-align: center;
-	background-color: var(--off-white);
+	color: var(--tan);
 	margin: 0;
-	font-size: 30%;
+	font-size: 65%;
+}
+
+.navfooter {
+	padding: .5rem .5rem 0 .5rem;
+	border-bottom: none;
+	background: var(--off-white);
 }
 
 .navfooter ul {
 	display: flex;
 	justify-content: space-evenly;
 	color: var(--aqua-green);
-	background-color: var(--off-white);
 	font-size: 30%;
 	align-items: center;
-	padding: 1rem;
 	margin: 0;
 }
 
 .navfooter li {
+	align-items: center;
 	border-right: 1px solid var(--gray-light);
+	padding: 0 .5rem;
+	align-items: center;
 }
+
+.navfooter li:last-child {
+	border-right: none;
+}
+
+.footer-p {
+	color: var(--tan);
+	border: none;
+	font-size: 60%;;
+	margin: 0;
+	padding: 1rem 0 2rem 0;
+	background: var(--off-white);
+}
+
+
+
+
+
 
