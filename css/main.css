@@ -205,8 +205,8 @@ button:hover {
 	align-items: center;
 }
 
-.logo:hover {     /* THIS STILL DOESN'T WORK RIGHT*/
-	background-image: url('../img/disney-logo-black.png');
+.logo:hover { 
+	background-image: url('https://github.com/clalicea/walt-disney-case-study/blob/main/img/disney-logo-black-small.jpg');
 	max-width: 100px;
 }
 
