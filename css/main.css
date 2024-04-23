@@ -139,6 +139,7 @@ button:hover {
 }
 
 
+
 /* header navigation */
 
 .header {
@@ -237,18 +238,16 @@ button:hover {
 }
 
 
+/* Section headings with gradient bar */
 
 
-/* Recent News Section */
-
-.recent-news-heading {
+.heading {
 	text-align: center;
 	background: var(--off-white);
-	margin-top: 7rem;
 	padding-top: 2rem;
 }
 
-.recent-news-heading:after {
+.heading:after {
     content: "";
     display: block;
     margin: 0 auto; 
@@ -256,6 +255,63 @@ button:hover {
     padding-top: .25rem;
    	background: linear-gradient(to right, orange, yellow, green, aquamarine);
 }
+
+
+
+/* Mission */
+
+
+.mission {
+	background: var(--off-white);
+	text-align: center;
+	padding: 1rem 10rem;
+}
+
+
+
+/* Blue Featured Section */
+
+
+.blue-featured {
+	max-width: 100%;
+	margin: 0;
+	padding: 0;
+	position: relative;
+  text-align: center;
+  background-color: var(--aqua-green);
+}
+
+.blue-featured-img {
+	max-width: 100%;
+	opacity: 50%;
+}
+
+.blue-section-overlay {
+	/*display: flex;
+	flex-wrap: wrap;*/
+	position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--white);
+}
+
+
+
+.blue-section-overlay:after {
+	content: "";
+    display: block;
+    margin: 0 auto; 
+    width: 15%; 
+    padding-right: .25rem;
+   	background: linear-gradient(to bottom, orange, yellow, green, aquamarine);
+}
+
+
+
+
+/* Recent News Section */
+
 
 .recent-news {
 	background: var(--off-white);
