@@ -159,15 +159,15 @@ button:hover {
 .navbar {
 	width: auto;
 	display: flex;
+	justify-content: space-evenly;
 	border: none;
 	padding: 0;
 	margin: 0;
-	justify-content: space-evenly;
 }
 
 .navbar:hover {
 	background: var(--white);
-	width: 100%;
+	width: auto;
 }
 
 .navbar ul {
@@ -206,9 +206,105 @@ button:hover {
 }
 
 .logo:hover { 
-	background-image: url('https://github.com/clalicea/walt-disney-case-study/blob/main/img/disney-logo-black-small.jpg');
+	/*background-image: url('https://github.com/clalicea/walt-disney-case-study/blob/main/img/disney-logo-black-small.jpg');*/
 	max-width: 100px;
 }
+
+
+
+/* Hero Section */
+
+
+.hero {
+	max-width: 100%;
+	position: relative;
+  text-align: center;
+
+}
+
+.hero-img {
+	max-width: 100%;
+}
+
+.hero-h1 {
+	color: var(--white);
+	font-size: 220%;
+	text-shadow: 2px 2px var(--gray-dark);
+	position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+
+/* Recent News Section */
+
+.recent-news-heading {
+	text-align: center;
+	background: var(--off-white);
+	margin-top: 7rem;
+	padding-top: 2rem;
+}
+
+.recent-news-heading:after {
+    content: "";
+    display: block;
+    margin: 0 auto; 
+    width: 15%; 
+    padding-top: .25rem;
+   	background: linear-gradient(to right, orange, yellow, green, aquamarine);
+}
+
+.recent-news {
+	background: var(--off-white);
+	display: flex;
+	padding: 1rem;
+	flex-wrap: wrap;
+	text-align: center;
+	align-items: center;
+  justify-content: center;
+}
+
+.column1,
+.column2,
+.column3 {
+	display: flex;
+	flex-direction: column;
+}
+
+.column1, 
+.column3 {
+	max-width: 30%;
+}
+
+.column2 {
+	max-width: 100%;
+	background: var(--white);
+	align-items: center;
+}
+
+.news-thumbnail-img {
+	max-width: 100%;
+	border-radius: 5px;
+}
+
+.news-thumbnail-img-featured {
+	max-width: 100%;
+	border-radius: 5px 5px 0px 0px;
+	margin-bottom: .25rem;
+}
+
+.gradient-wrapper {
+	max-width: 40%;
+	height: 100%;
+	align-content: center;
+	background: linear-gradient(to right, orange, yellow, green, aquamarine);
+	padding-bottom: 4px;
+	margin: 0;
+}
+
 
 
 /* Spotlight Section */
@@ -216,31 +312,16 @@ button:hover {
 
 .spotlight {
 	background: var(--off-white);
+	position: relative;
+	padding: 3rem;
+	margin: 0;
 }
 
 .spotlight-img {
-	align-items: center;
-	padding: 2rem 4rem;
 	max-width: 100%;
-	border-radius: 15px;
+	border-radius: 10px;
+	position: absolute;
 }
-
-.callout-box-right {
-	max-width: 40%;
-	background: linear-gradient(to bottom, orange, yellow, green, aquamarine);
-	padding-right: 3px;
-	margin: 0;
-	align-items: center;
-}
-
-.callout-box-left {
-	max-width: 40%;
-	background: linear-gradient(to bottom, orange, yellow, green, aquamarine);
-	margin: 0;
-	padding-left: 3px;
-	align-items: center;
-}
-
 
 .callout {
 	background: var(--white);
@@ -248,12 +329,38 @@ button:hover {
 	flex-direction: column;
 	padding: 2rem;
 	margin: 0;
+}
 
+.callout-box-right {
+	max-width: 35%;
+	background: linear-gradient(to bottom, orange, yellow, green, aquamarine);
+	padding-right: 3px;
+	margin: 0;
+	position: absolute;  /*THE POSITIONING DOESN"T WORK*/
+	right: 40px;
+	top: 130px;
+	border-radius: 10px 0 0 10px;
+}
+
+.callout-box-left {    
+	max-width: 35%;
+	background: linear-gradient(to bottom, orange, yellow, green, aquamarine);
+	margin: 0;
+	/*position: absolute;   /*THE POSITIONING DOESN"T WORK
+	left: 40px;
+	top: 130px;*/
+	position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+	padding-left: 3px;
+	border-radius: 10px 0 0 10px;
 }
 
 
 
-/* footer Navigation */
+
+/* Footer Navigation */
 
 .footer {
 	background: linear-gradient(to right, orange, yellow, green, aquamarine);
@@ -283,6 +390,7 @@ button:hover {
 .navfooter ul {
 	display: flex;
 	justify-content: space-evenly;
+	flex-wrap: wrap;
 	color: var(--aqua-green);
 	font-size: 30%;
 	align-items: center;
@@ -292,7 +400,7 @@ button:hover {
 .navfooter li {
 	align-items: center;
 	border-right: 1px solid var(--gray-light);
-	padding: 0 .5rem;
+	padding: .5rem;
 	align-items: center;
 }
 
