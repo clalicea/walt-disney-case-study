@@ -49,6 +49,7 @@
   --pale-green: #dcf9f1;
   --blue: #0077da;
   --blue-dark: #2d68b1;
+  --blue-transparent: rgb(85, 163, 192);
   --clear: rgba(0, 0, 0, 0.5);
 	--font-script: "Monorail Regular", Script;
   --font-sans-serif-avenir: "Avenir Next Regular", "InspireTWDC", "Matterhorn Regular", Helvetica, sans-serif;
@@ -269,21 +270,19 @@ button:hover {
 
 
 
-/* Blue Featured Section */
+/* Blue Featured Section */            	/* THIS IS WHERE YOU LEFT OFF */    
 
 
 .blue-featured {
 	max-width: 100%;
-	margin: 0;
-	padding: 0;
 	position: relative;
   text-align: center;
-  background-color: var(--aqua-green);
+  background-color: var(--blue-transparent);
 }
 
 .blue-featured-img {
 	max-width: 100%;
-	opacity: 50%;
+	opacity: 20%;
 }
 
 .blue-section-overlay {
@@ -293,13 +292,12 @@ button:hover {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: var(--white);
 }
 
 
-
+/*
 .blue-section-overlay:after {
-	content: "";
+		content: "";
     display: block;
     margin: 0 auto; 
     width: 15%; 
@@ -307,7 +305,7 @@ button:hover {
    	background: linear-gradient(to bottom, orange, yellow, green, aquamarine);
 }
 
-
+*/
 
 
 /* Recent News Section */
