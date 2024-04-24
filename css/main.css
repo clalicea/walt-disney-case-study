@@ -59,6 +59,7 @@
 html {
   box-sizing: border-box;
 }
+
 *,
 *:before,
 *:after {
@@ -132,6 +133,7 @@ button {
 	padding: .5rem;
 	border: none;
 	font-size: 80%;
+	width: 100%;
 }
 
 button:hover {
@@ -270,42 +272,52 @@ button:hover {
 
 
 
-/* Blue Featured Section */            	/* THIS IS WHERE YOU LEFT OFF */    
+/* Blue Featured Section */            	   
 
 
-.blue-featured {
+.blue-featured ul {
 	max-width: 100%;
 	position: relative;
-  text-align: center;
+  text-align: left;
   background-color: var(--blue-transparent);
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0;
+  padding: 0;
 }
 
 .blue-featured-img {
 	max-width: 100%;
 	opacity: 20%;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: space-between;
 }
 
-.blue-section-overlay {
-	/*display: flex;
-	flex-wrap: wrap;*/
+.blue-section-overlay,
+.blue-section-overlay-h3 {
+	max-width: 100%;
+	display: flex;
+	justify-content: space-evenly;
+	color: var(--white);
+	flex-wrap: wrap;
 	position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
-
-/*
-.blue-section-overlay:after {
+.blue-section-overlay-h3:after {
 		content: "";
     display: block;
     margin: 0 auto; 
-    width: 15%; 
-    padding-right: .25rem;
-   	background: linear-gradient(to bottom, orange, yellow, green, aquamarine);
+    width: 2px; 
+   	background: linear-gradient(to top, orange, yellow, aquamarine);
 }
 
-*/
+
+
 
 
 /* Recent News Section */
@@ -364,51 +376,71 @@ button:hover {
 /* Spotlight Section */
 
 
-.spotlight {
+.callout {                
+	width: 100%;
+	background: var(--white);
+	padding: 2rem;
+}
+
+
+
+
+.spotlight-img-right {
+	max-width: 100%;
+	border-radius: 5px;
+	margin-right: 0;
+	margin-left: auto;
+}
+
+.spotlight-right {
+	width: 100%;
 	background: var(--off-white);
-	position: relative;
 	padding: 3rem;
 	margin: 0;
+	position: relative;
 }
 
-.spotlight-img {
-	max-width: 100%;
-	border-radius: 10px;
-	position: absolute;
-}
-
-.callout {
-	background: var(--white);
-	display: flex;
-	flex-direction: column;
-	padding: 2rem;
-	margin: 0;
-}
-
-.callout-box-right {
-	max-width: 35%;
-	background: linear-gradient(to bottom, orange, yellow, green, aquamarine);
+.callout-container-right {
+	width: 33%;
+	height: auto;
+	background: linear-gradient(to bottom, orange, yellow, lightgreen, aquamarine);
 	padding-right: 3px;
-	margin: 0;
-	position: absolute;  /*THE POSITIONING DOESN"T WORK*/
-	right: 40px;
-	top: 130px;
-	border-radius: 10px 0 0 10px;
+	position: absolute;
+	top: 50%;
+	left: 80%;
+	transform: translate(-50%, -50%);
+	z-index: 1;
 }
 
-.callout-box-left {    
-	max-width: 35%;
-	background: linear-gradient(to bottom, orange, yellow, green, aquamarine);
+
+
+
+.spotlight-img-left {
+	max-width: 100%;
+	border-radius: 5px;
+	margin-left: 0;
+	margin-right: auto;
+}
+
+.spotlight-left {              
+	width: 100%;
+	background: var(--off-white);
+	padding: 3rem;
 	margin: 0;
-	/*position: absolute;   /*THE POSITIONING DOESN"T WORK
-	left: 40px;
-	top: 130px;*/
-	position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-	padding-left: 3px;
-	border-radius: 10px 0 0 10px;
+	position: relative;
+}
+
+
+.callout-container-left {    
+	width: 33%;
+	background: linear-gradient(to bottom, orange, yellow, lightgreen, aquamarine);
+	padding-left: 3px; 
+	position: absolute;           /* STILL CANT GET THIS TO WORK!! */
+	top: 50%;
+	right: 80%;
+	height: auto;
+	transform: translate(-50%, -50%);
+	z-index: 1;
 }
 
 
@@ -470,6 +502,7 @@ button:hover {
 	padding: 1rem 0 2rem 0;
 	background: var(--off-white);
 }
+
 
 
 
