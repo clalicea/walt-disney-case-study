@@ -375,7 +375,7 @@ button:hover {
 
 .hero-h1 {
 	color: var(--white);
-	font-size: 220%;
+	font-size: 275%;
 	text-shadow: 2px 2px var(--gray-dark);
 	position: absolute;
   top: 50%;
