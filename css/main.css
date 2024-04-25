@@ -255,8 +255,8 @@ button:hover {
     display: block;
     margin: 0 auto; 
     width: 15%; 
-    padding-top: .25rem;
-   	background: linear-gradient(to right, orange, yellow, green, aquamarine);
+    padding-top: .20rem;
+   	background: linear-gradient(to right, orange, yellow, lightgreen, aquamarine);
 }
 
 
@@ -275,45 +275,54 @@ button:hover {
 /* Blue Featured Section */            	   
 
 
-.blue-featured ul {
+.blue-container {
 	max-width: 100%;
+	background-color: var(--blue-transparent);
+	margin: auto;
+	padding: auto;
 	position: relative;
-  text-align: left;
-  background-color: var(--blue-transparent);
-  display: flex;
-  justify-content: space-evenly;
-  margin: 0;
-  padding: 0;
+	color: var(--white);
 }
 
-.blue-featured-img {
+.blue-img {
 	max-width: 100%;
 	opacity: 20%;
 	margin: 0;
 	padding: 0;
 	display: flex;
-	justify-content: space-between;
+	justify-content: left;
 }
 
-.blue-section-overlay,
-.blue-section-overlay-h3 {
-	max-width: 100%;
-	display: flex;
-	justify-content: space-evenly;
-	color: var(--white);
-	flex-wrap: wrap;
-	position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.blue-container ul {
+		width: 80%;
+  	position:absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		display: flex;
+		margin: auto;
+		padding: auto;
+		
 }
 
-.blue-section-overlay-h3:after {
+.blue-container li, 
+.blue-container-h3 {
+  	display:flex;
+    justify-content: space-evenly;
+    margin: auto;
+    color: var(--white);
+}
+
+.blue-p {
+	background: none;
+}
+
+.blue-container-h3::after {
 		content: "";
     display: block;
-    margin: 0 auto; 
     width: 2px; 
-   	background: linear-gradient(to top, orange, yellow, aquamarine);
+    margin: .25rem 2rem;
+   	background: linear-gradient(to top, orange, yellow, lightgreen, aquamarine);
 }
 
 
@@ -347,8 +356,15 @@ button:hover {
 
 .column2 {
 	max-width: 100%;
-	background: var(--white);
 	align-items: center;
+	margin: 0;
+	padding: 0;
+}
+
+.column2-background {
+	background: var(--white);
+	margin: 0;
+	padding: 1rem;
 }
 
 .news-thumbnail-img {
@@ -359,15 +375,14 @@ button:hover {
 .news-thumbnail-img-featured {
 	max-width: 100%;
 	border-radius: 5px 5px 0px 0px;
-	margin-bottom: .25rem;
+	margin: 0;
 }
 
-.gradient-wrapper {
+.column2-gradient-wrapper {
 	max-width: 40%;
-	height: 100%;
 	align-content: center;
-	background: linear-gradient(to right, orange, yellow, green, aquamarine);
-	padding-bottom: 4px;
+	background: linear-gradient(to right, orange, yellow, lightgreen, aquamarine);
+	padding-bottom: 2px;
 	margin: 0;
 }
 
