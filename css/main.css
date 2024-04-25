@@ -42,10 +42,10 @@
   --gray-dark: #555555;
   --gray-medium: #7c7874;
   --gray-light: #e0dfdf;
-  --tan: #ded4bd;
+  --tan: #fff7e4;
   --aqua-green: #4cd8b0; 
   --white: #fff;
-  --off-white: #fff7e4; /* or #fcf8ee?)*/
+  --off-white: #fcf8ef; 
   --pale-green: #dcf9f1;
   --blue: #0077da;
   --blue-dark: #2d68b1;
@@ -622,7 +622,7 @@ button:hover {
 	text-transform: uppercase;
 	color: var(--tan);
 	margin: 0;
-	font-size: 65%;
+	font-size: 80%;
 }
 
 .navfooter {
@@ -641,6 +641,7 @@ button:hover {
 	margin: 0;
 }
 
+
 .navfooter li {
 	align-items: center;
 	border-right: 1px solid var(--gray-light);
@@ -652,6 +653,10 @@ button:hover {
 	border-right: none;
 }
 
+.navfooter li:hover {
+	color: var(--black);
+}
+
 .footer-p {
 	color: var(--tan);
 	border: none;
@@ -661,7 +666,10 @@ button:hover {
 	background: var(--off-white);
 }
 
-
+.fb-icon {
+	max-width: 30px;
+	padding-bottom: .5rem;
+}
 
 
 
