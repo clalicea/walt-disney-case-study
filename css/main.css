@@ -633,10 +633,10 @@ button:hover {
 
 .navfooter ul {
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: center;
 	flex-wrap: wrap;
 	color: var(--aqua-green);
-	font-size: 50%;
+	font-size: 90%;
 	align-items: center;
 	margin: 0;
 }
@@ -644,7 +644,7 @@ button:hover {
 .navfooter li {
 	align-items: center;
 	border-right: 1px solid var(--gray-light);
-	padding: .5rem;
+	padding: 0 .5rem;
 	align-items: center;
 }
 
@@ -655,7 +655,7 @@ button:hover {
 .footer-p {
 	color: var(--tan);
 	border: none;
-	font-size: 70%;;
+	font-size: 90%;
 	margin: 0;
 	padding: 1rem 0 2rem 0;
 	background: var(--off-white);
