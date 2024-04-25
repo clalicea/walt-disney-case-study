@@ -210,7 +210,7 @@ button:hover {
 }
 
 .logo:hover { 
-	background-image: url("https://github.com/clalicea/walt-disney-case-study/blob/main/img/disney-logo-black-small.jpg");
+	background-image: url('https://github.com/clalicea/walt-disney-case-study/blob/main/img/disney-logo-black-small.jpg');
 	max-width: 100px;
 }
 
