@@ -198,7 +198,7 @@ button:hover {
 }
 
 .mag-glass:hover {  
-	/*background-image: url('../img/magnifying-glass-black.png');  */
+	background-image: url("./img/magnifying-glass-black.png");
 	max-width: 20px;
 }
 
@@ -210,7 +210,7 @@ button:hover {
 }
 
 .logo:hover { 
-	/*background-image: url('https://github.com/clalicea/walt-disney-case-study/blob/main/img/disney-logo-black-small.jpg');*/
+	background-image: url("https://github.com/clalicea/walt-disney-case-study/blob/main/img/disney-logo-black-small.jpg");
 	max-width: 100px;
 }
 
@@ -339,7 +339,7 @@ button:hover {
 	flex-wrap: wrap;
 	text-align: center;
 	align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 .column1,
@@ -351,7 +351,7 @@ button:hover {
 
 .column1, 
 .column3 {
-	max-width: 30%;
+	max-width: 25%;
 }
 
 .column2 {
@@ -364,7 +364,7 @@ button:hover {
 .column2-background {
 	background: var(--white);
 	margin: 0;
-	padding: 1rem;
+	padding: 1.5rem;
 }
 
 .news-thumbnail-img {
@@ -379,11 +379,11 @@ button:hover {
 }
 
 .column2-gradient-wrapper {
-	max-width: 40%;
+	max-width: 35%;
 	align-content: center;
 	background: linear-gradient(to right, orange, yellow, lightgreen, aquamarine);
 	padding-bottom: 2px;
-	margin: 0;
+	margin: 0
 }
 
 
