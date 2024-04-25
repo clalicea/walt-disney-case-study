@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Web Components | Walt Disney Company Case Study</title>
-	<link href="https://db.onlinewebfonts.com/c/130a63bec7d0efc605bbe6253a27de98?family=InspireTWDC" rel="stylesheet" href="../css/main.css">
+	<link href="https://db.onlinewebfonts.com/c/130a63bec7d0efc605bbe6253a27de98?family=InspireTWDC" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/37d4ab97c9.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" type="text/css" href="../css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="../css/main.css">
@@ -30,24 +30,24 @@
 	<article class="component">
 		<h4>Headings</h4>
 		<div class="component_code">
-			h1 <img src="img/h1.png" class="component-img">
+			h1 <img src="img/h1.png" alt="imge of heading 1" class="component-img">
 			code:
 			<h1>Recent News</h1>
 		</div>
 		<div class="component_code">
-			h2 <img src="img/h2.png" width="400px" class="component-img">
+			h2 <img src="img/h2.png" alt="imge of heading 2"  width="400px" class="component-img">
 			code:
 			<h2>From 'Deadpool' to 'Mufasa': The Walt Disney Studios...</h2>
 		</div>
 		<div class="component_code">
 			h3 (which is used for spotlight heading)<br>
-			<img src="img/h3.png" width="150px" class="component-img">
+			<img src="img/h3.png" alt="imge of heading 3" width="150px" class="component-img">
 			code:
 			<h3>About</h3>
 		</div>
 		<div class="component_code">
 			h4 (used for header navigation)<br>
-			<img src="img/h4.png" width="75px" lass="component-img">
+			<img src="img/h4.png" alt="imge of heading 4" width="75px" class="component-img">
 			code:
 			<h4>About</h4>
 		</div>
@@ -58,7 +58,7 @@
 		</div>
 		<div class="component_code">
 			h6
-			<img src="img/h6.png" width="100px" class="component-img">
+			<img src="img/h6.png" alt="image of heading 6" width="100px" class="component-img">
 			code:
 			<h6>April 12, 2024</h6>
 		</div>
@@ -71,11 +71,11 @@
 		<h4>Atoms</h4>
 		<div class="component_code">
 			logo black:
-			<img src="../img/disney-logo-black.png" class="component-img">
+			<img src="../img/disney-logo-black.png" alt="disney logo black" class="component-img">
 		</div>
 		<div class="component_code_background">
 			logo white:
-			<img src="../img/disney-logo-white.png" class="component-img">
+			<img src="../img/disney-logo-white.png" alt="disney logo white" class="component-img">
 		</div>
 	</article>
 
@@ -91,16 +91,16 @@
 
 		<div class="component_code">
 			Header, Clear Navigation, img:
-			<img src="img/nav-clear.png" class="component-img">
+			<img src="img/nav-clear.png" alt="transparent navigation bar" class="component-img">
 			Header, Hover Navigation, img:
-			<img src="img/nav-hover.png" class="component-img">
+			<img src="img/nav-hover.png" alt="white navigation bar"  class="component-img">
 			Navigation, code:
 			<header class="header">
 
 				<!--collapsible navigation-->
 
 				<div class="collapsible-menu">
-					<button type="button" class="collapsible-menu-button">Menu</button>
+					<a href="#" class="collapsible-menu-button">Menu</a>
 					<div class="collapsible-menu-content">
 	  					<ul>
 							<li><a href="#">About</a></li>
@@ -127,8 +127,8 @@
 					<ul class="navbar navbar2">
 						<li><a href="#">Social Responsibility</a></li>
 						<li><a href="#">News</a></li>
-						<li><a href="#"><img src="../img/magnifying-glass-rotate-90-white.png" class="mag-glass mag-glass-white"></a></li>
-						<li><a href="#"><img src="../img/magnifying-glass-black.png" class="mag-glass mag-glass-black"></a></li>
+						<li><a href="#"><img src="../img/magnifying-glass-rotate-90-white.png" alt="magnifying glass white" class="mag-glass mag-glass-white"></a></li>
+						<li><a href="#"><img src="../img/magnifying-glass-black.png" alt="magnifying glass black" class="mag-glass mag-glass-black"></a></li>
 					</ul>
 				</nav>
 				<!--<div class="header navbar mag-glass">
@@ -143,7 +143,7 @@
 
 		<div class="component_code">
 			Hero Section, img:
-			<img src="img/hero-img.png" class="component-img">
+			<img src="img/hero-img.png" alt="image of disneyworld entrance" class="component-img">
 			Hero Section, code:
 			<section class="hero">
 				<img src="../img/StudioLot_TeamDisney_7-web-1440x959.jpg" class="hero-img" alt="image of disneyworld entrance">
@@ -157,7 +157,7 @@
 
 		<div class="component_code">
 			Recent News, img:
-			<img src="img/featured.png" class="component-img">
+			<img src="img/featured.png" alt="image of featured items on disney site" class="component-img">
 			Recent News, code:	
 			<div class="heading">
 					<h1>Recent News</h1>
@@ -204,7 +204,7 @@
 
 		<div class="component_code">
 			Right align Spotlight, img:
-			<img src="img/spotlight-right spotlight-about.png" class="component-img">
+			<img src="img/spotlight-right-spotlight-about.png" alt="image of BB8 from Star Wars" class="component-img">
 			Right Align Spotlight, code:
 
 			<article class="spotlight-right">
@@ -213,7 +213,7 @@
 					<div class="callout">
 						<h3>About</h3>
 						<p>The mission of The Walt Disney Company is to entertain, inform and inspire people around the globe through the power of unparalleled storytelling, reflecting the iconic brands, creative minds and innovative technologies that make ours the world’s premier entertainment company.</p>
-						<button><a href="#">View More</a></button>
+						<a href="#" class="button">View More</a>
 					</div> <!--callout-->
 				</div> <!--callout-box-->
 			</article>
@@ -223,7 +223,7 @@
 
 		<div class="component_code">
 			Left align Spotlight, img:
-			<img src="img/spotlight-left spotlight-investor-relations.png" class="component-img">
+			<img src="img/spotlight-left-spotlight-investor-relations.png" alt="image of disneyland pond" class="component-img">
 			Left Align Spotlight, code:
 			<article class="spotlight-left">
 				<img src="../img/investor-960x540.jpg" class="spotlight-img-left" alt="image of disneyland pond">
@@ -231,7 +231,7 @@
 						<div class="callout">
 							<h3>Investor Relations</h3>
 							<p>Our commitment to creativity, technology and innovation generates unparalleled experiences that drive long-term value for our shareholders.</p>
-							<button><a href="#">View More</a></button>
+							<a href="#" class="button">View More</a>
 						</div> <!--callout-->
 					</div> <!--callout-box-->
 			</article>
@@ -242,7 +242,7 @@
 
 		<div class="component_code">
 			mission, img:
-			<img src="img/mission.png" class="component-img">
+			<img src="img/mission.png" alt="image of mission statement" class="component-img">
 			mission, code:
 			<section class="mission">
 				<div class="heading">
@@ -257,7 +257,7 @@
 
 		<div class="component_code">
 			blue featured section, img:
-			<img src="img/blue-section.png" class="component-img">
+			<img src="img/blue-section.png" alt="image of blue section" class="component-img">
 			blue featured section, code:
 			<section class="blue-container">
 				<img src="../img/Leadership-Featured-1440x546.jpg" class="blue-img" alt="image of statute of walt disney and mickey mouse">
@@ -273,7 +273,7 @@
 
 		<div class="component_code">
 			Footer, img:
-			<img src="img/footer.png" class="component-img">
+			<img src="img/footer.png" alt="image of footer section" class="component-img">
 			Footer, code:
 			<footer class="footer">
 				<div class="social">
