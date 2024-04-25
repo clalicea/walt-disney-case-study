@@ -636,7 +636,7 @@ button:hover {
 	justify-content: space-evenly;
 	flex-wrap: wrap;
 	color: var(--aqua-green);
-	font-size: 30%;
+	font-size: 50%;
 	align-items: center;
 	margin: 0;
 }
@@ -655,7 +655,7 @@ button:hover {
 .footer-p {
 	color: var(--tan);
 	border: none;
-	font-size: 60%;;
+	font-size: 70%;;
 	margin: 0;
 	padding: 1rem 0 2rem 0;
 	background: var(--off-white);
