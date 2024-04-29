@@ -128,7 +128,7 @@ ul, li, a {
 	list-style-type: none;
 }
 
-button {
+.button {
 	background: var(--pale-green);
 	text-transform: uppercase;
 	padding: .5rem;
@@ -137,7 +137,7 @@ button {
 	width: 100%;
 }
 
-button:hover {
+.button:hover {
 	background: var(--aqua-green);
 	color: var(--white);
 }
@@ -153,28 +153,30 @@ button:hover {
 	display: flex;
 	align-items: center;
 	justify-content: space-evenly;
-	padding-top: 4px;
-	background-color: var(--clear);
 	color: var(--white);
+	padding-top: 4px;
+	background: linear-gradient(to right, orange, yellow, lightgreen, aquamarine);
 	position: absolute;
 	top: 0;
 	left: 0;
 	z-index: 1;
 }
 
+
 .header:hover {
-	background: linear-gradient(to right, orange, yellow, lightgreen, aquamarine);
+	width: 100%;
+	height: auto;
 	color: var(--black);
 	border-bottom: 1px solid var(--gray-light);
-	position: inherit;
 }
+
 
 .logo {
 	max-width: 100px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding: 10px;
+	margin: 0 1rem;
 }
 
 
@@ -182,11 +184,6 @@ button:hover {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding: 10px;
-}
-
-.logo-black:hover {
-	background: var(--white);
 }
 
 
@@ -200,11 +197,8 @@ button:hover {
 	display: flex;
 	justify-content: right;
 	align-items: center;
-	align-content: center;
-	position: relative;
+	margin-left: 3rem;
 }
-
-
 
 
 
@@ -215,28 +209,31 @@ button:hover {
 .navbar {
 	max-width: 100%;
 	display: flex;
-	justify-content: space-between;
-	padding: 0 .5rem;
+	justify-content: center;
 	text-transform: uppercase;
 	font-size: 90%;
 	letter-spacing: .1rem;
 	flex-wrap: wrap;
+	padding: .5rem 0;
+	margin-top: 4px;
+	background: none;
 }
 
 .navbar:hover {
 	background: var(--white);
 }
 
-.navbar1 li, 
-.navbar2 li {
+.navbar li  {
 	max-width: 100%;
 	display: flex;
+	align-items: center;
 	justify-content: space-evenly;
-	padding: 0 2rem;
-	margin: 0;
+	padding: 0 1rem;
 }
 
-.navbar1 li:last-child {
+
+.navbar1 li:last-child, 
+.navbar3 li:last-child {
 	padding-right: 0;
 	margin-right: 0;
 }
@@ -245,22 +242,7 @@ button:hover {
 	padding-left: 0;
 	margin-left: 0;
 }
-														/*  LEFT OFF HERE */
 
-			
-.dropdown:hover {
-	display: flex;
-	flex-direction: column;
-}
-
-.dropdown-list {
-	display: none;
-}
-
-.dropdown-list:hover {
-	display: flex;
-	flex-direction: column;
-}
 
 
 
