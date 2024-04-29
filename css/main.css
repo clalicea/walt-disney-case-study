@@ -132,9 +132,13 @@ ul, li, a {
 	background: var(--pale-green);
 	text-transform: uppercase;
 	padding: .5rem;
+	margin: auto;
 	border: none;
 	font-size: 80%;
 	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .button:hover {
@@ -270,6 +274,7 @@ ul, li, a {
 }
 
 
+
 /* Section headings with gradient bar */
 
 
@@ -288,73 +293,6 @@ ul, li, a {
     padding-top: .20rem;
    	background: linear-gradient(to right, orange, yellow, lightgreen, aquamarine);
 }
-
-
-
-/* Mission */
-
-
-.mission {
-	background: var(--off-white);
-	text-align: center;
-	padding: 1rem 10rem;
-}
-
-
-
-/* Blue Featured Section */            	   
-
-
-.blue-container {
-	max-width: 100%;
-	background-color: var(--blue-transparent);
-	margin: auto;
-	padding: auto;
-	position: relative;
-	color: var(--white);
-}
-
-.blue-img {
-	max-width: 100%;
-	opacity: 20%;
-	margin: 0;
-	padding: 0;
-	display: flex;
-	justify-content: left;
-}
-
-.blue-container ul {
-		width: 80%;
-  	position:absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		display: flex;
-		margin: auto;
-		padding: auto;
-		
-}
-
-.blue-container li, 
-.blue-container-h3 {
-  	display:flex;
-    justify-content: space-evenly;
-    margin: auto;
-    color: var(--white);
-}
-
-.blue-p {
-	background: none;
-}
-
-.blue-container-h3::after {
-		content: "";
-    display: block;
-    width: 2px; 
-    margin: .25rem 2rem;
-   	background: linear-gradient(to top, orange, yellow, lightgreen, aquamarine);
-}
-
 
 
 
@@ -431,9 +369,9 @@ ul, li, a {
 	width: 100%;
 	background: var(--white);
 	padding: 2rem;
+	display: flex;
+	flex-direction: column;
 }
-
-
 
 
 .spotlight-img-right {
@@ -447,13 +385,12 @@ ul, li, a {
 	width: 100%;
 	background: var(--off-white);
 	padding: 3rem;
-	margin: 0;
 	position: relative;
+	left: 0;
 }
 
 .callout-container-right {
-	width: 33%;
-	height: auto;
+	min-width: 33%;
 	background: linear-gradient(to bottom, orange, yellow, lightgreen, aquamarine);
 	padding-right: 3px;
 	position: absolute;
@@ -481,15 +418,13 @@ ul, li, a {
 	position: relative;
 }
 
-
 .callout-container-left {    
-	width: 33%;
+	min-width: 33%;
 	background: linear-gradient(to bottom, orange, yellow, lightgreen, aquamarine);
 	padding-left: 3px; 
-	position: absolute;           /* STILL CANT GET THIS TO WORK!! */
+	position: absolute;          
 	top: 50%;
-	right: 80%;
-	height: auto;
+	right: 50%;
 	transform: translate(-50%, -50%);
 	z-index: 1;
 }
