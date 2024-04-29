@@ -245,6 +245,22 @@ button:hover {
 	padding-left: 0;
 	margin-left: 0;
 }
+														/*  LEFT OFF HERE */
+
+			
+.dropdown:hover {
+	display: flex;
+	flex-direction: column;
+}
+
+.dropdown-list {
+	display: none;
+}
+
+.dropdown-list:hover {
+	display: flex;
+	flex-direction: column;
+}
 
 
 
